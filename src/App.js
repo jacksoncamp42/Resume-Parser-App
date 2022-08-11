@@ -1,14 +1,21 @@
 import React from 'react';
-import FileUpload from './components/FileUpload';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import FileUpload from './components/FileUpload';
+import ResumeViewer from './ResumeViewer';
+import Home from './Home';
 
-const App = () => (
-  <div className="container mt-4">
-    <h4 className="display-4 text-center mb-4">
-      <i className="fab fa-react" /> Resume Parser
-    </h4>
-    <FileUpload />
-  </div>
-);
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/Upload" element={<FileUpload />} />
+        <Route path="/Search" element={<ResumeViewer />} />
+      </Routes>
+    </Router>
+  );
+}
 
 export default App;
