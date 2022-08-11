@@ -36,3 +36,171 @@
     transform: rotate(360deg);
   }
 }
+
+/* RESUME CARD CONTAINER*/
+
+.resumeContainer{
+  width: 1138px;
+  height: 613px;
+  font-family: 'Inter', sans-serif;
+  align-items: center;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 0fr;
+  row-gap: 2em;
+
+  background: #FFFFFF;
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0px 30px 18px -8px rgba(0, 0, 0, 0.1);
+}
+
+.resumeCard {
+  width: 328px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  background-color: white;
+  position: relative;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
+  box-sizing: border-box;
+  border: 3px solid #000000;
+  border-radius: 16px;
+  padding: 16px 32px;
+}
+
+.resumeCard:hover {
+  box-shadow: 0px 30px 18px -8px rgba(0, 0, 0, 0.1);
+  transform: scale(1.05, 1.05);
+}
+
+.resumeCard p #resume-title{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 160%;
+  margin: 0px;
+}
+
+.resumeCard #resume-fields {
+  font-size: 10px ;
+  color: #767575;
+  margin-bottom: 12px;
+}
+
+#resume-name {
+  font-weight: bold;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 160%;
+  display: flex;
+  align-items: center;
+  margin: 0px;
+}
+
+.resumeFavorite {
+  background: none;
+	border: none;
+	padding: 0;
+	cursor: pointer;
+  background-size:cover;
+  width: 24px;
+  height: 24px;
+}
+
+.resumeFavorite:hover{
+  transform: scale(1.15, 1.15);
+}
+
+.contacts {
+  color: #767575;
+  margin: 0px 1rem 0px 0rem;
+  font-size: 8px !important;
+  margin-bottom: 8px;
+}
+
+.resumeCardTitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.resumeCardHeader {
+  display: flex;
+  flex-direction: row;
+}
+
+.resumeCard #resume-fields{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#resume-education {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 8px;
+}
+
+#resume-experience{
+  white-space: nowrap;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+#resume-skills{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 8px;
+}
+
+.viewResumeButton {
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 160%;
+  text-align: left;
+  text-decoration: underline;
+}
+
+.viewResumeButton:disabled {
+  pointer-events: none;
+}
+
+.viewResumeButton:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.viewResumeButton:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+.footer a{
+  display: inline-block;
+  width: 30px;
+}
+
+.footer *{
+  margin-right: 16px;
+}
+
+
+
