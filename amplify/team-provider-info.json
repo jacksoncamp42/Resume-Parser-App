@@ -18,11 +18,11 @@
       "function": {
         "S3Triggere125d68e": {
           "deploymentBucketName": "amplify-resumeparsergroup-dev-161036-deployment",
-          "s3Key": "amplify-builds/S3Triggere125d68e-396a526f4f7a706c3044-build.zip"
+          "s3Key": "amplify-builds/S3Triggere125d68e-73554f6a3579374b4e66-build.zip"
         },
         "Parser": {
           "deploymentBucketName": "amplify-resumeparsergroup-dev-161036-deployment",
-          "s3Key": "amplify-builds/Parser-4859614f42566e546b38-build.zip"
+          "s3Key": "amplify-builds/Parser-6c65496e6f5a762b432f-build.zip"
         }
       }
     }
