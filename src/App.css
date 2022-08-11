@@ -41,17 +41,15 @@
 
 .resumeContainer{
   width: 1138px;
-  height: 613px;
   font-family: 'Inter', sans-serif;
   align-items: center;
-
   display: grid;
   grid-template-columns: 1fr 1fr 0fr;
-  row-gap: 2em;
-
+  row-gap: 2.3em;
   background: #FFFFFF;
   border-radius: 16px;
   padding: 32px;
+  margin: 32px;
   box-shadow: 0px 30px 18px -8px rgba(0, 0, 0, 0.1);
 }
 
@@ -202,5 +200,6 @@
   margin-right: 16px;
 }
 
+/* RESUME CARD CONTAINER END*/
 
 
