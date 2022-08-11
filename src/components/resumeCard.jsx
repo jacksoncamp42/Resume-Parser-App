@@ -56,8 +56,17 @@ const ResumeCard = ({ resume }) => {
       setLoading(true);
     }
 
-    function handleFavoriteRequest() {
-      return new Promise((resolve) => setTimeout(resolve, 2000));
+    function networkSimulation(){
+      return new Promise((resolve) => setTimeout(resolve, 2000))
+    }
+
+    async function handleFavoriteRequest() {
+      if(resume.isFavorite == true){ //Handle remove from favorites:
+        return await networkSimulation();
+      }
+      else{ // Handle add to favorites:
+        return await networkSimulation();
+      }
     }
 
     useEffect(() => {
