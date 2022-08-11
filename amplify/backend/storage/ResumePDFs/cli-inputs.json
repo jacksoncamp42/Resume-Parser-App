@@ -1,0 +1,16 @@
+{
+  "resourceName": "ResumePDFs",
+  "policyUUID": "01e3ec16",
+  "bucketName": "resume-pdf-bucket",
+  "storageAccess": "authAndGuest",
+  "guestAccess": [
+    "READ"
+  ],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ],
+  "triggerFunction": "S3Triggere125d68e",
+  "groupAccess": {}
+}

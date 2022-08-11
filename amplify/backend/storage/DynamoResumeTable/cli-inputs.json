@@ -1,0 +1,14 @@
+{
+  "resourceName": "DynamoResumeTable",
+  "tableName": "DynamoResumeTable",
+  "partitionKey": {
+    "fieldName": "name",
+    "fieldType": "string"
+  },
+  "sortKey": {
+    "fieldName": "skills",
+    "fieldType": "string"
+  },
+  "gsi": [],
+  "triggerFunctions": []
+}
