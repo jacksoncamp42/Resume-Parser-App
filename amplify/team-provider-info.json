@@ -13,7 +13,18 @@
     },
     "categories": {
       "auth": {
-        "resumeparsergroup2db4e69a": {}
+        "resumeparsergroup2db4e69a": {},
+        "true": {}
+      },
+      "function": {
+        "S3Triggere125d68e": {
+          "deploymentBucketName": "amplify-resumeparsergroup-dev-161036-deployment",
+          "s3Key": "amplify-builds/S3Triggere125d68e-396a526f4f7a706c3044-build.zip"
+        },
+        "Parser": {
+          "deploymentBucketName": "amplify-resumeparsergroup-dev-161036-deployment",
+          "s3Key": "amplify-builds/Parser-4859614f42566e546b38-build.zip"
+        }
       }
     }
   }
