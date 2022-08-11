@@ -13,8 +13,7 @@
     },
     "categories": {
       "auth": {
-        "resumeparsergroup2db4e69a": {},
-        "true": {}
+        "resumeparsergroup2db4e69a": {}
       },
       "function": {
         "S3Triggere125d68e": {
