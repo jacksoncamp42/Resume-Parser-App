@@ -65,7 +65,7 @@
   position: relative;
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
   box-sizing: border-box;
-  border: 2px solid #000000;
+  border: 3px solid #000000;
   border-radius: 16px;
   padding: 16px 32px;
 }
@@ -109,6 +109,10 @@
   background-size:cover;
   width: 24px;
   height: 24px;
+}
+
+.resumeFavorite:hover{
+  transform: scale(1.15, 1.15);
 }
 
 .contacts {

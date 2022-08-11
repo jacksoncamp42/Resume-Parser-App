@@ -70,7 +70,7 @@ const ResumeCard = ({ resume }) => {
     }, [isLoading]);
 
     function handleViewResume() {
-      
+
     }
 
     return (
@@ -80,9 +80,9 @@ const ResumeCard = ({ resume }) => {
           aria-labelledby="contained-modal-title-vcenter"
           centered>
           <Modal.Header closeButton>
-            <Modal.Title>Add to favorites?</Modal.Title>
+            <Modal.Title>Edit favorites?</Modal.Title>
           </Modal.Header>
-          <Modal.Body>{resume.name} will be added to your favorites.</Modal.Body>
+          <Modal.Body> {resume.isFavorite === true ? `${resume.name} will be removed from your favorites.` : `${resume.name} will be added to your favorites.`} </Modal.Body>
           <Modal.Footer>
             <Button variant="secondary" onClick={handleClose}>
               Cancel
