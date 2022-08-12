@@ -219,7 +219,7 @@
 .upload-container {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 3%;
+  margin-bottom: 10%;
   width: 1138px;
   height: 613px;
   font-family: 'Inter', sans-serif;
@@ -240,15 +240,79 @@
 }
 
 .left-shape {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   background: #ffffff;
   width: 428px;
   height: 230px;
   border-radius: 16px;
-  padding: 16px;
+  padding: 32px;
   box-shadow: 0px 30px 18px -8px rgba(0, 0, 0, 0.1);
 }
+
 .left-shape > h2 {
   width: 200px;
   font-weight: bold;
   margin-bottom: 16px;
 }
+
+.left-shape img{
+  width:  92px;
+  height: 92px;
+  margin-top: 4rem;
+}
+
+.files{
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="file"] {
+  position: absolute;
+  left: 0;
+  opacity: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  }
+
+input[type="file"]:hover {
+  cursor: pointer;
+}
+
+label {
+  width: 428px;
+  height: 330px;
+  align-self: center;
+  position: relative;
+  display: inline;
+  justify-content: center;
+  background: #FFFFFF5C;
+  border: 3px solid #D2D2D2;
+  border-radius: 16px;
+}
+
+label:hover {
+  border: 3px solid black;
+}
+
+.file-upload-area .btn-primary{
+  width: 30%;
+  background-color: #0038FF;
+}
+
+.custom-file-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.custom-file-label p {
+  margin-top: 1rem;
+  color: #838383;
+}
+
+
+
+
