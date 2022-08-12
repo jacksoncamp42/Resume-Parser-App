@@ -18,17 +18,22 @@ export default function Search() {
   return (
     <div className="search-container">
       <div className="logo">
-        <h1>Search for Resumes</h1>
-        <div className="shape"> </div>
+          <h1 className='search-text'>Search for <br/><mark>resumes</mark></h1>
         <img className="search-icon" src={SearchFrame} alt="search-logo" />
       </div>
 
-      <form className="search-section" onSubmit={handleSubmit}>
-        <div className="search-input">
+      <div className="search-section">
+      <form onSubmit={handleSubmit}>
+        <div class="input-group">
+        <span class="input-group-text" id="basic-addon1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path>
+              </svg>
+          </span>
           <input
             type="search"
             id="form1"
-            className="form-control"
+            class="form-control"
             placeholder="Search a skill or keyword"
             onChange={handleChange}
           />
@@ -37,6 +42,7 @@ export default function Search() {
           Search Resumes
         </button>
       </form>
+      </div>
     </div>
   );
 }

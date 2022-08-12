@@ -16,7 +16,7 @@ resumes.push(resume3);
 resumes.push(resume4);
 resumes.push(resume5);
 resumes.push(resume6);
-resumes.push(resume7);
+resumes.push(resume5);
 
 
 const ResumeContainer= () => (

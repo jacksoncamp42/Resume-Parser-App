@@ -1,3 +1,7 @@
+*{
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
 }
@@ -50,7 +54,6 @@
   border-radius: 16px;
   padding: 32px;
   margin: 32px;
-  box-shadow: 0px 30px 18px -8px rgba(0, 0, 0, 0.1);
 }
 
 .resumeCard {
@@ -202,4 +205,11 @@
 
 /* RESUME CARD CONTAINER END*/
 
-
+.main-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1f6fa;
+}
