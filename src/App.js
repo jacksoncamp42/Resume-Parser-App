@@ -7,6 +7,8 @@ import FileUpload from './components/FileUpload';
 import ResumeViewer from './ResumeViewer';
 import Home from './Home';
 import { Sidebar } from './components/Sidebar';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
  const [sidebar, setSidebar] = useState(false);
@@ -20,6 +22,8 @@ function App() {
   }, [sidebar]);
 
   return (
+    <>
+    <ToastContainer/>
     <Router>
       <Sidebar onActivateSidebar={handleSidebar}/>
       <div className="main-container" 
@@ -36,6 +40,7 @@ function App() {
       </Routes>
       </div>
     </Router>
+    </>
   );
 }
 
