@@ -43,7 +43,7 @@
 
 /* RESUME CARD CONTAINER*/
 
-.resumeContainer{
+.resumeContainer {
   width: 1138px;
   font-family: 'Inter', sans-serif;
   align-items: center;
@@ -76,7 +76,7 @@
   transform: scale(1.05, 1.05);
 }
 
-.resumeCard p #resume-title{
+.resumeCard p #resume-title {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 600;
@@ -86,7 +86,7 @@
 }
 
 .resumeCard #resume-fields {
-  font-size: 10px ;
+  font-size: 10px;
   color: #767575;
   margin-bottom: 12px;
 }
@@ -104,15 +104,15 @@
 
 .resumeFavorite {
   background: none;
-	border: none;
-	padding: 0;
-	cursor: pointer;
-  background-size:cover;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  background-size: cover;
   width: 24px;
   height: 24px;
 }
 
-.resumeFavorite:hover{
+.resumeFavorite:hover {
   transform: scale(1.15, 1.15);
 }
 
@@ -134,7 +134,7 @@
   flex-direction: row;
 }
 
-.resumeCard #resume-fields{
+.resumeCard #resume-fields {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -147,13 +147,13 @@
   margin-bottom: 8px;
 }
 
-#resume-experience{
+#resume-experience {
   white-space: nowrap;
   overflow: hidden;
   margin-bottom: 8px;
 }
 
-#resume-skills{
+#resume-skills {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -168,7 +168,8 @@
   box-sizing: border-box;
   cursor: pointer;
   display: inline-block;
-  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-family: Roobert, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica,
+    Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
   font-family: 'Inter';
   font-style: normal;
   font-weight: 500;
@@ -184,7 +185,7 @@
 
 .viewResumeButton:hover {
   color: #fff;
-  background-color: #1A1A1A;
+  background-color: #1a1a1a;
   box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
   transform: translateY(-2px);
 }
@@ -194,12 +195,12 @@
   transform: translateY(0);
 }
 
-.footer a{
+.footer a {
   display: inline-block;
   width: 30px;
 }
 
-.footer *{
+.footer * {
   margin-right: 16px;
 }
 
@@ -212,4 +213,41 @@
   justify-content: center;
   align-items: center;
   background-color: #f1f6fa;
+
+/* Upload Part */
+.upload-container {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3%;
+  width: 1138px;
+  height: 613px;
+  font-family: 'Inter', sans-serif;
+  align-items: center;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 0fr;
+  row-gap: 2em;
+}
+
+.left-side > h1 {
+  font-family: 'Inter';
+  font-style: normal;
+  line-height: 160%;
+  margin-bottom: 64px;
+  font-weight: 700;
+  font-size: 58px;
+}
+
+.left-shape {
+  background: #ffffff;
+  width: 428px;
+  height: 230px;
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0px 30px 18px -8px rgba(0, 0, 0, 0.1);
+}
+.left-shape > h2 {
+  width: 200px;
+  font-weight: bold;
+  margin-bottom: 16px;
 }
