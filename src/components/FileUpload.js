@@ -44,9 +44,11 @@ const FileUpload = () => {
   }
 
   async function onChange(e) {
-    const file = e.target.files[0];
-    const result = await Storage.put(file.name, file);
-    console.log("result: ", result);
+    await Promise.all(
+      [...e.target.files].map((file) => {
+        Storage.put(file.name, file);
+      })
+    );
   }
 
   async function onSubmit(e) {}
