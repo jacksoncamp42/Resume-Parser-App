@@ -1,3 +1,7 @@
+*{
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
 }
@@ -41,18 +45,15 @@
 
 .resumeContainer {
   width: 1138px;
-  height: 613px;
   font-family: 'Inter', sans-serif;
   align-items: center;
-
   display: grid;
   grid-template-columns: 1fr 1fr 0fr;
-  row-gap: 2em;
-
-  background: #ffffff;
+  row-gap: 2.3em;
+  background: #FFFFFF;
   border-radius: 16px;
   padding: 32px;
-  box-shadow: 0px 30px 18px -8px rgba(0, 0, 0, 0.1);
+  margin: 32px;
 }
 
 .resumeCard {
@@ -202,6 +203,16 @@
 .footer * {
   margin-right: 16px;
 }
+
+/* RESUME CARD CONTAINER END*/
+
+.main-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1f6fa;
 
 /* Upload Part */
 .upload-container {

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import '@fontsource/inter';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -9,14 +9,32 @@ import Home from './Home';
 import { Sidebar } from './components/Sidebar';
 
 function App() {
+ const [sidebar, setSidebar] = useState(false);
+
+ const handleSidebar = (sidebar) => {
+    setSidebar(sidebar);
+  }
+
+  useEffect(() => {
+    console.log(sidebar);
+  }, [sidebar]);
+
   return (
     <Router>
-      <Sidebar />
+      <Sidebar onActivateSidebar={handleSidebar}/>
+      <div className="main-container" 
+      style={
+        sidebar ?
+        {marginLeft:"300px", transition:" margin-left .45s"} :
+        {transition:" .35s"}
+      }
+      >
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Upload" element={<FileUpload />} />
         <Route path="/Search" element={<ResumeViewer />} />
       </Routes>
+      </div>
     </Router>
   );
 }
