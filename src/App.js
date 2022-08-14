@@ -11,11 +11,11 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
- const [sidebar, setSidebar] = useState(false);
+  const [sidebar, setSidebar] = useState(false);
 
- const handleSidebar = (sidebar) => {
+  const handleSidebar = (sidebar) => {
     setSidebar(sidebar);
-  }
+  };
 
   useEffect(() => {
     console.log(sidebar);
@@ -23,23 +23,24 @@ function App() {
 
   return (
     <>
-    <ToastContainer/>
-    <Router>
-      <Sidebar onActivateSidebar={handleSidebar}/>
-      <div className="main-container" 
-      style={
-        sidebar ?
-        {marginLeft:"300px", transition:" margin-left .45s"} :
-        {transition:" .35s"}
-      }
-      >
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/Upload" element={<FileUpload />} />
-        <Route path="/Search" element={<ResumeViewer />} />
-      </Routes>
-      </div>
-    </Router>
+      <ToastContainer />
+      <Router>
+        <Sidebar onActivateSidebar={handleSidebar} />
+        <div
+          className="main-container"
+          style={
+            sidebar
+              ? { marginLeft: '300px', transition: ' margin-left .45s' }
+              : { transition: ' .35s' }
+          }
+        >
+          <Routes>
+            <Route path="/" element={<FileUpload />} />
+            <Route path="/Upload" element={<FileUpload />} />
+            <Route path="/Search" element={<ResumeViewer />} />
+          </Routes>
+        </div>
+      </Router>
     </>
   );
 }

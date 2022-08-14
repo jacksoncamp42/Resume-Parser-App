@@ -8,25 +8,19 @@ export const SidebarData = [
   {
     title: 'Upload',
     path: '/Upload',
-    icon: <img src={Upload} alt="Dashboard" style={{height:"50px", width:"50px"}}/>,
-    cName: 'nav-text',
-  },
-  {
-    title: 'Dashboard',
-    path: '/',
-    icon: <img src={Dashlogo} alt="Dashboard" />,
+    icon: (
+      <img
+        src={Upload}
+        alt="Dashboard"
+        style={{ height: '50px', width: '50px' }}
+      />
+    ),
     cName: 'nav-text',
   },
   {
     title: 'Resumes',
     path: '/Search',
     icon: <img src={Resume} alt="Resume" />,
-    cName: 'nav-text',
-  },
-  {
-    title: 'Sign Out',
-    path: '/',
-    icon: <img src={Signout} alt="Sign" />,
     cName: 'nav-text',
   },
 ];
