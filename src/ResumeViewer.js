@@ -1,13 +1,31 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { useState } from 'react';
 import { Sidebar } from './components/Sidebar';
 import Search from './components/Search';
 import ResumeContainer from './components/ResumeContainer';
 import './ResumeViewer.css';
+import { API, graphqlOperation } from "aws-amplify";
+import { listResumes } from './api/queries';
 
 export default function ResumeViewer() {
+  const [resumes, setResumes] = useState([]);
+  const [files, setFiles] = useState([]);
   const [search, setSearch] = useState('');
   const [searchedResumes, setSearchedResumes] = useState([]);
+
+  const fetchResumes = async () => {
+    try {
+      // Switch authMode to API_KEY for public access
+      const { data } = await API.graphql({
+        query: listResumes,
+        authMode: "API_KEY"
+      });
+      const resumes = data.listResumes.items;
+      setResumes(resumes);
+    } catch (err) {
+      console.log(err);
+    }
+  };
 
   function handleChange(newValue) {
     setSearch(newValue);
@@ -15,6 +33,10 @@ export default function ResumeViewer() {
       setSearchedResumes([]);
     }
   }
+
+  useEffect(() => {
+    fetchResumes();
+  }, []);
 
   function handleSubmit(event) {
     event.preventDefault();
@@ -135,14 +157,14 @@ export default function ResumeViewer() {
       'Party Playlist Votes\nCreator\n·\nBuilt a native mobile app for Android and iOS that allows a\nparty host to invite party attendees to vote on event music,\nwhich reduced decision times by 45 minutes on average\n·\nStarted with a mobile app for Android, and then learned\nSwift to port it to iOS\n·\nUtilized the Spotify API, and built an interactive, real-time\nvoting function on top of it\n·\nUsed Swift, Java, SQL, HTML/CSS in creation and\nmaintenance, implementing user feedback\nStudent Coder Group\nMentor\nSeptember 2018 - May 2021\n·\nMentored 13 incoming computer science freshmen,\nproviding guidance on challenging classes and performing\ncode review for their first CS projects\n·\nCollaborated with fourth-year CS students to organize\nnetworking events for connecting with local developers\nUniversity of Pittsburgh Soccer\nCaptain\nSeptember 2017 - May 2021\n·\nCommunicated practices and events to team, working in\npartnership with coaches to streamline team information\n·\nLed initiative to mentor and coach local youth soccer\nteams in the community for 12 hours each summer month',
   };
 
-  let resumes = [];
-  resumes.push(resume1);
-  resumes.push(resume2);
-  resumes.push(resume3);
-  resumes.push(resume4);
-  resumes.push(resume5);
-  resumes.push(resume6);
-  resumes.push(resume5);
+  // let resumes = [];
+  // resumes.push(resume1);
+  // resumes.push(resume2);
+  // resumes.push(resume3);
+  // resumes.push(resume4);
+  // resumes.push(resume5);
+  // resumes.push(resume6);
+  // resumes.push(resume5);
 
   return (
     <>
