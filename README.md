@@ -12,11 +12,12 @@ This tool is made for resume parsing that automates the process of reading throu
 
 ### Frontend:
 - React.js
-- Bootstrap
+- Bootstrap 5
 - React Router
     
 ### Backend:
 - AWS Amplify
-- Amazon S3
+- Amazon S3 Bucket
 - Serverless GraphQL API with AWS Lambda
+- Amazon Textract ML Parsing
 - DynamoDB Data Table
