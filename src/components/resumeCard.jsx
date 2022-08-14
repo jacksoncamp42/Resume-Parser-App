@@ -105,7 +105,12 @@ const ResumeCard = ({ resume }) => {
 
         <div className='resumeCard'>
             <div className="resumeCardTitle">
-            <p id="resume-name">{resume.hasOwnProperty('name') ? resume.name : "N/A"}</p>
+            <p id="resume-name">{resume.hasOwnProperty('name') ? 
+            resume.name //Handle all caps names
+            .toLowerCase()
+            .split(' ')
+            .map((s) => s.charAt(0).toUpperCase() + s.substring(1))
+            .join(' ') : "N/A"}</p>
             <button className='resumeFavorite' 
             style={{backgroundImage:`url(${favoriteButtonOutline})`}}
             onClick = {handleShow}
