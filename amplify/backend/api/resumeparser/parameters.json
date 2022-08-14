@@ -1,0 +1,6 @@
+{
+  "AppSyncApiName": "resumeparser",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthModeLastUpdated": "2022-08-14T07:35:30.862Z"
+}

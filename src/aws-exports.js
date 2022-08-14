@@ -25,7 +25,11 @@ const awsmobile = {
         "EMAIL"
     ],
     "aws_user_files_s3_bucket": "resumeparsers3storage112618-dev",
-    "aws_user_files_s3_bucket_region": "us-west-2"
+    "aws_user_files_s3_bucket_region": "us-west-2",
+    "aws_appsync_graphqlEndpoint": "https://e2i6fsuunjet3o3wugrufgp6yu.appsync-api.us-west-2.amazonaws.com/graphql",
+    "aws_appsync_region": "us-west-2",
+    "aws_appsync_authenticationType": "API_KEY",
+    "aws_appsync_apiKey": "da2-d3o4spygijclbmmma3773l2dii"
 };
 
 
