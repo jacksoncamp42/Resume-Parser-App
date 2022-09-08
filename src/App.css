@@ -48,7 +48,7 @@
   font-family: 'Inter', sans-serif;
   align-items: center;
   display: grid;
-  grid-template-columns: 1fr 1fr 0fr;
+  grid-template-columns: 1fr 1fr 1fr;
   row-gap: 2.3em;
   background: #FFFFFF;
   border-radius: 16px;
